@@ -1,6 +1,6 @@
-pandas==2.0.3
-numpy==1.24.3
-plotly==5.18.0
+pandas
+numpy
+plotly
 streamlit==1.28.0
-scipy==1.11.3
+scipy
 altair==4.2.2
