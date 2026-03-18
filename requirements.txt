@@ -1,6 +1,5 @@
 pandas
 numpy
 plotly
-streamlit==1.28.0
 scipy
-altair==4.2.2
+streamlit
