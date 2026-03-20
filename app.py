@@ -25,9 +25,9 @@ TEMPLATE = 'plotly_dark'
 
 @st.cache_data
 def load_data():
-    orders = pd.read_csv('../data/orders.csv',        parse_dates=['order_date', 'signup_date'])
-    users  = pd.read_csv('../data/users.csv',         parse_dates=['signup_date'])
-    funnel = pd.read_csv('../data/funnel_events.csv', parse_dates=['date'])
+    orders = pd.read_csv('data/orders.csv',        parse_dates=['order_date', 'signup_date'])
+    users  = pd.read_csv('data/users.csv',         parse_dates=['signup_date'])
+    funnel = pd.read_csv('data/funnel_events.csv', parse_dates=['date'])
     orders['month']     = orders['order_date'].dt.to_period('M').astype(str)
     orders['hour']      = orders['order_date'].dt.hour
     orders['dayofweek'] = orders['order_date'].dt.day_name()
