@@ -121,7 +121,7 @@ with tab2:
 
     c1, c2, c3 = st.columns(3)
     c1.metric("Month-1 Retention", f"{ret[1].mean():.1f}%")
-    c2.metric("Month-3 Retention", f"{ret[3].mean():.1f}%")
+   c2.metric("Month-3 Retention", f"{ret[3].mean():.1f}%" if 3 in ret.columns else "N/A")
     c3.metric("Month-6 Retention", f"{ret[6].mean():.1f}%" if 6 in ret.columns else "N/A")
 
 # ── TAB 3: SEGMENTS ───────────────────────────────────────────────────────────
